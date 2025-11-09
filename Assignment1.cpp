@@ -457,7 +457,7 @@ int main()
     glEnableVertexAttribArray(1);
     */
 
-    // Circle
+    // Circle for fun
     unsigned int VAO_sphere, VBO_sphere, EBO_sphere;
     glGenVertexArrays(1, &VAO_sphere);
     glGenBuffers(1, &VBO_sphere);
@@ -683,12 +683,14 @@ int main()
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model_moon));
         glDrawElements(GL_TRIANGLES, indices_moon.size(), GL_UNSIGNED_INT, 0);
 
+        // Circle for fun
+        /*
         glBindVertexArray(VAO_sphere);
         glm::mat4 model_circle = glm::mat4(1.0f);
         model_circle = glm::translate(model_circle, glm::vec3(20.0f, 20.0f, 0.0f)); // center position
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model_circle));
         glDrawElements(GL_TRIANGLES, indices_sphere.size(), GL_UNSIGNED_INT, 0);
-
+        */
         
         glfwSwapBuffers(window);
         glfwPollEvents();
