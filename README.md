@@ -4,3 +4,9 @@ This project was completed as part of my Computer Graphics course. It is a 3D si
 
 ![](rotate_d365_earth.jpg)
 
+## Languages/Libraries/Tools Used
+* C++
+* OpenGL
+* GLFW
+* GLM
+* GLAD
